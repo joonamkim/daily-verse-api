@@ -28,6 +28,6 @@ public class BibleAppController {
     @GetMapping("/verses")
     @ResponseBody
     public String getVerses() {
-        return crawlerService.crawlDailyVerses();
+        return crawlerService.crawlDailyVerses().toString();
     }
 }
